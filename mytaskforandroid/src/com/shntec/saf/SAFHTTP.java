@@ -172,7 +172,7 @@ public class SAFHTTP {
 				throw new SAFException(0, e1.getMessage(), e1);
 			}
 		}
-		
+		System.out.println("Request: "+request.toString());
 		
 		HttpResponse response = null;
 		// 执行get请求
@@ -228,6 +228,7 @@ public class SAFHTTP {
 		}
 		
 		lastTime = System.currentTimeMillis() - startTime;
+		System.out.println("Response: "+responseString);
 		return responseString;
 	}
 	/**

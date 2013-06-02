@@ -45,6 +45,13 @@ public class SAFRunner {
 		safRunner.executorService.submit(runnable);
 	}
 	/**
+	 * 在UI环境下执行
+	 * @param runnable
+	 */
+	public static void runUI(Runnable runnable){
+		new Handler(safRunner.looper).post(runnable);
+	}
+	/**
 	 * 获取线程池对象
 	 * @return
 	 */
