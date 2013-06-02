@@ -1,0 +1,8 @@
+{
+	"ConfigVersion" : 1,  // 必须
+	"DynamicConfig" : "FindFine_Dynamic_Config",  // 必须
+	"ConfigContent" : {   // 必须
+		"DataServlet" : "http://192.168.0.118:8080/FindFine/Main"
+	
+	}
+}
